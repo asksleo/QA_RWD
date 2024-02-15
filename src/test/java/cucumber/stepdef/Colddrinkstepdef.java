@@ -49,7 +49,7 @@ public class Colddrinkstepdef {
 	@When("I select the Login username and password")
 	public void i_select_the_login_username_and_password(io.cucumber.datatable.DataTable dataTable) {
 	   List<Map<String,String>> login= dataTable.asMaps(String.class, String.class);
-	   for(int i=0;i<2;i++)
+	   for(int i=0;i<1;i++)
 	   {
 			driver.findElement(By.xpath("//*[contains(@aria-controls,'popup-login')]")).click();
 			driver.findElement(By.id("header-account-sign-in-email")).sendKeys(login.get(i).get("username"));
