@@ -12,6 +12,7 @@ public class BeforeandAfter {
 	@Before
 	public void beforeMethod() {
 		System.out.println("Before method");
+		System.out.println("empty before");
 
 	}
 	@After
