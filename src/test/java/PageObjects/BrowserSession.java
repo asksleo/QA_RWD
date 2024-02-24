@@ -1,6 +1,7 @@
 package PageObjects;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.platform.commons.logging.LoggerFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,9 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+
 
 import java.util.ResourceBundle;
 
@@ -19,7 +18,7 @@ public class BrowserSession {
     public WebDriver driver;
     public ResourceBundle RB; //Java Utill Pakage
     public void open_Browser(String br) {
-        RB=ResourceBundle.getBundle("Config"); //Load Config.properties File
+       RB=ResourceBundle.getBundle("Config"); //Load Config.properties File
 
         if (br.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
