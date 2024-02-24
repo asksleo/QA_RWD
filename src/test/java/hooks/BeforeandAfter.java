@@ -13,7 +13,9 @@ public class BeforeandAfter {
 
 	@Before
 	public void beforeMethod() {
+
 		System.out.println("Test is Started!!!!");
+
 	}
 	@After
 	public void afterMethod() {
