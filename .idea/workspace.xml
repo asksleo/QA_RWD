@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="no change" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="emptybranch" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="emptybranch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2cfTardsJoDs29f9iWoJFv1zlH1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/karan/IdeaProjects/QA_RWD",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karan\IdeaProjects\QA_RWD\src\test\java\com\functionaltest\config\domain" />
+      <recent name="C:\Users\karan\IdeaProjects\QA_RWD\src\test\java\com\functionaltest\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TestRunner">
+    <configuration name="Feature: 01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" />
+      <option name="GLUE" value="hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_RWD" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: 01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Adding a colddrink to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/addcolddrink.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_RWD" />
+      <option name="NAME_FILTER" value="^Adding a colddrink to the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Adding a colddrink to the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Adding a colddrink to the cart" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Log in with valid credentials and placed the order with Cash" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_RWD" />
+      <option name="NAME_FILTER" value="^Log in with valid credentials and placed the order with Cash$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Log in with valid credentials and placed the order with Cash$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Log in with valid credentials and placed the order with Cash" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_RWD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber Java.Feature: 01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus" />
+        <item itemvalue="Cucumber Java.Scenario: Adding a colddrink to the cart" />
+        <item itemvalue="Cucumber Java.Scenario: Log in with valid credentials and placed the order with Cash" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="" />
+      <created>1708501705575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708501705575</updated>
+    </task>
+    <task id="LOCAL-00001" summary="no change">
+      <created>1708502638030</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708502638030</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="emptybranch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="no change" />
+    <option name="LAST_COMMIT_MESSAGE" value="no change" />
+  </component>
+</project>
