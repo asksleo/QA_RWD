@@ -2,6 +2,8 @@ package hooks;
 
 
 
+import PageObjects.BrowserSession;
+import PageObjects.StaticTestSession;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.Cookie;
@@ -11,13 +13,14 @@ public class BeforeandAfter {
 
 	@Before
 	public void beforeMethod() {
-		System.out.println("Before method");
+
+		System.out.println("Test is Started!!!!");
 
 	}
 	@After
 	public void afterMethod() {
 
-		System.out.println("After method");
+		System.out.println("Test Successfully Completed!!!!");
 
 
 	}

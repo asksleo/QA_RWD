@@ -1,7 +1,9 @@
 package PageObjects;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.platform.commons.logging.LoggerFactory;
+
+import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,14 +11,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
-
 import java.util.ResourceBundle;
 
 public class BrowserSession {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     public ResourceBundle RB; //Java Utill Pakage
+
+    JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+
+
     public void open_Browser(String br) {
        RB=ResourceBundle.getBundle("Config"); //Load Config.properties File
 
