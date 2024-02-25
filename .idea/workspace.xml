@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="no change">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/domain/commonTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/functionaltest/config/ApplicationSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/functionaltest/config/BrowserSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/functionaltest/config/ScreenshotTakingRemoteWebDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/Createonlineorderthroughrwdandvalidateit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/GuestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/guestuser.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Shubham.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/BrowserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/BrowserSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/BeforeandAfter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/BeforeandAfter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/Web-carryout-order-using-papacard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/Web-carryout-order-using-papacard.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +49,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging RWD__Pras",
+    "TestNG.TestRunner_Shubham.executor": "Run",
+    "git-widget-placeholder": "RWD__Pras",
     "last_opened_file_path": "C:/Users/karan/IdeaProjects/QA_RWD",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -79,7 +64,7 @@
       <recent name="C:\Users\karan\IdeaProjects\QA_RWD\src\test\java\com\functionaltest\config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner">
+  <component name="RunManager">
     <configuration name="Feature: 01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" />
@@ -179,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708502638030</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="no change">
+      <option name="closed" value="true" />
+      <created>1708857126495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708857126495</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

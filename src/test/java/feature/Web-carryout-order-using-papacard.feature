@@ -17,7 +17,6 @@ Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout order
     And  I added some extras toppings "Cheesesticks" from given list
     And  I click on Checkout button on home page
     Then I click on Olo Cart Checkout button on Cart page
-    And  I select papapriority option
     And  I click on Cash button on Contact and Payment page
     Then I click on review your order button on  Contact and Payment page
     And  I get the estimated amount from review your order page
