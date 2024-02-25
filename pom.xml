@@ -4,7 +4,10 @@
   <artifactId>QA_RWD</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-
+  <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
     <dependencies><!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
