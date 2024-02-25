@@ -9,4 +9,3 @@ Feature: select a store on the RWD site.
     Then select the store in store list
     Then I verify store address as "1925" on home page is displayed or not
     Then I close the brower after verifed
-

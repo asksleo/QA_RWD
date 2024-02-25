@@ -9,8 +9,6 @@ import org.slf4j.LoggerFactory;
 import java.time.Duration;
 
 public class PageElement {
-
-    protected BrowserSession browserSession = StaticTestSession.browserSession;
     protected Logger logger = LoggerFactory.getLogger(getClass().getSimpleName());
     protected String elementIdentifier = null;
     protected int iFrameIdentifier = -1;
@@ -30,10 +28,10 @@ public class PageElement {
         WebElement element = null;
         logger.info("find element: " + elementIdentifier);
 
-     browserSession.driver.switchTo().window(browserSession.driver.getWindowHandle());
+     BrowserSession.driver.switchTo().window(BrowserSession.driver.getWindowHandle());
         if (iFrameIdentifier != -1) {
-            browserSession.driver.switchTo().defaultContent();
-            browserSession.driver.switchTo().frame(iFrameIdentifier);
+            BrowserSession.driver.switchTo().defaultContent();
+            BrowserSession.driver.switchTo().frame(iFrameIdentifier);
         }
 
         // try to find element right off the bat
@@ -43,7 +41,7 @@ public class PageElement {
         }
 
         // if that didn't work, wait for the element
-        new WebDriverWait(browserSession.driver, Duration.ofSeconds(5)).until(webDriver -> {
+        new WebDriverWait(BrowserSession.driver, Duration.ofSeconds(5)).until(webDriver -> {
             logger.info("wait for element: " + elementIdentifier);
             return getWebElementInternal() != null;
         });
@@ -59,7 +57,7 @@ public class PageElement {
         // id
         if (elementIdentifier.indexOf("#") == 0) {
             try {
-                element = browserSession.driver.findElement(By.id(elementIdentifier.substring(1)));
+                element = BrowserSession.driver.findElement(By.id(elementIdentifier.substring(1)));
             } catch (Exception e) {
                 // do nothing
             }
@@ -68,7 +66,7 @@ public class PageElement {
         // class
         else if (elementIdentifier.indexOf(".") == 0) {
             try {
-                element = browserSession.driver.findElement(By.className(elementIdentifier.substring(1)));
+                element = BrowserSession.driver.findElement(By.className(elementIdentifier.substring(1)));
             } catch (Exception e) {
                 // do nothing
             }
@@ -77,7 +75,7 @@ public class PageElement {
         // xpath
         else if (elementIdentifier.indexOf("//") == 0) {
             try {
-                element = browserSession.driver.findElement(By.xpath(elementIdentifier));
+                element = BrowserSession.driver.findElement(By.xpath(elementIdentifier));
             } catch (Exception e) {
                 // do nothing
             }
@@ -86,16 +84,16 @@ public class PageElement {
         // we don't know what it is, try everything
         else {
             try {
-                element = browserSession.driver.findElement(By.id(elementIdentifier));
+                element = BrowserSession.driver.findElement(By.id(elementIdentifier));
             } catch (Exception e1) {
                 try {
-                    element = browserSession.driver.findElement(By.name(elementIdentifier));
+                    element = BrowserSession.driver.findElement(By.name(elementIdentifier));
                 } catch (Exception e2) {
                     try {
-                        element = browserSession.driver.findElement(By.xpath(elementIdentifier));
+                        element = BrowserSession.driver.findElement(By.xpath(elementIdentifier));
                     } catch (Exception e3) {
                         try {
-                            element = browserSession.driver.findElement(By.className(elementIdentifier));
+                            element = BrowserSession.driver.findElement(By.className(elementIdentifier));
                         } catch (Exception e4) {
                             // do nothing
                         }
@@ -127,7 +125,7 @@ public class PageElement {
 
     public void waitUntilReady() {
         try {
-            new WebDriverWait(browserSession.driver, Duration.ofSeconds(5)).until(webDriver -> {
+            new WebDriverWait(BrowserSession.driver, Duration.ofSeconds(5)).until(webDriver -> {
                 logger.info("wait until available: " + elementIdentifier);
                 WebElement element = getWebElementInternal();
                 return (element != null && element.isEnabled() && element.isDisplayed());
@@ -178,24 +176,24 @@ public class PageElement {
 
     public void hoverOver() {
 
-        Actions action = new Actions(browserSession.driver);
+        Actions action = new Actions(BrowserSession.driver);
         action.sendKeys(Keys.ENTER);
         //action.moveToElement(getWebElement()).perform();
     }
 
     /*Mouse hoverover method with webelement paramter  to hoverover the pointer or focus on webelement.*/
     public void hoverOver(WebElement element) {
-        Actions action = new Actions(browserSession.driver);
+        Actions action = new Actions(BrowserSession.driver);
         action.moveToElement(element).click().perform();
     }
 
     public void focusOut() {
-        Actions action = new Actions(browserSession.driver);
+        Actions action = new Actions(BrowserSession.driver);
         action.sendKeys(Keys.TAB);
     }
 
     public String getHTML() {
-        return (String) ((JavascriptExecutor) browserSession.driver)
+        return (String) ((JavascriptExecutor) BrowserSession.driver)
                 .executeScript("return arguments[0].innerHTML;", getWebElement());
     }
 
@@ -220,5 +218,18 @@ public class PageElement {
             return false;
         }
     }
+
+    public void waitForDocumentReady() {
+        try {
+            new WebDriverWait(BrowserSession.driver, Duration.ofSeconds(5)).until(webDriver -> {
+                logger.info("wait for document ready");
+                return BrowserState.isPageReady();
+            });
+        }
+        catch (Exception e) {
+            logger.warn("Waiting for document ready failed! Continuing on, and hoping for the best...");
+        }
+    }
+
 }
 
