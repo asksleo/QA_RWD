@@ -1,7 +1,6 @@
 Feature: select a store on the RWD site.
   @store_selection_carryout
   Scenario: select a store for carryout a order
-   Given opne "chrome" browser and load the online website URL
     Given I am on store selection page
     When I click on Want to carry it out button
     Then I given the store zip code as "66061" for carryout order

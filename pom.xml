@@ -3,8 +3,7 @@
   <groupId>QA_RWD</groupId>
   <artifactId>QA_RWD</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
-  <properties>
+    <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
     </properties>
