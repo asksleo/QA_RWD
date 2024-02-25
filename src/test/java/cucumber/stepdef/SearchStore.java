@@ -5,11 +5,9 @@ import PageObjects.StaticTestSession;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 
 import java.awt.*;
 import java.time.Duration;
-import java.util.Arrays;
 import java.util.logging.Logger;
 
 import static PageObjects.SearchStore.*;
@@ -21,13 +19,12 @@ public class SearchStore {
     ////////////Prashant////////////
     @Given("I am on store selection page")
     public void iAmOnStoreSelectionPage() {
-      //  if (Start_Carryout_Store_Search.isClickableOnPage()) {
-
-        Start_Carryout_Store_Search.getWebElement().click();
-        BrowserSession.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        if (Start_Carryout_Store_Search.getWebElement().isEnabled()) {
+            Start_Carryout_Store_Search.getWebElement().click();
+            BrowserSession.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         }
-   // }
+    }
 
     @When("I click on Want to carry it out button")
     public void iClickOnWantToCarryItOutButton() {
@@ -45,6 +42,7 @@ public class SearchStore {
         Submit_button.getWebElement().click();
         BrowserSession.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
+
     @Then("select the store in store list")
     public void selectTheStoreInStoreList() {
         Store_selection.getWebElement().click();
@@ -57,7 +55,7 @@ public class SearchStore {
         //Verify the Store No and full address
         String actText = Actual_Text.getWebElement().getText();
         Actual_Text.getWebElement().click();
-       String[] Act_Store_No =  Get_Full_Address_Of_Store.getWebElement().getText().split("#",2);
+        String[] Act_Store_No = Get_Full_Address_Of_Store.getWebElement().getText().split("#", 2);
         if (actText.equalsIgnoreCase(expected_store_address.getText()) && Act_Store_No[1].equals(store_no)) {
             Logger.getLogger(actText);
             System.out.println("Verified the carryout store 1925");
@@ -66,8 +64,8 @@ public class SearchStore {
     }
 
 
-    @Then("I close the brower after verifed")
-    public void iCloseTheBrowerAfterVerifed() {
+    @Then("I close the browser after verified")
+    public void iCloseTheBrowserAfterVerified() {
         Logger.getLogger("Closed the browser after verified");
         browserSession.Closing_browser();
     }

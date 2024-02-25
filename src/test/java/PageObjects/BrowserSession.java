@@ -17,10 +17,6 @@ public class BrowserSession {
     public static WebDriver driver;
     public ResourceBundle RB; //Java Utill Pakage
 
-    JavascriptExecutor jse = (JavascriptExecutor) driver;
-
-
-
     public void open_Browser(String br) {
         RB=ResourceBundle.getBundle("Config"); //Load Config.properties File
 
