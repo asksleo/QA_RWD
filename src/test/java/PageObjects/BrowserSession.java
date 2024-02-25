@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class BrowserSession {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     public ResourceBundle RB; //Java Utill Pakage
     public void open_Browser(String br) {
         RB=ResourceBundle.getBundle("Config"); //Load Config.properties File
