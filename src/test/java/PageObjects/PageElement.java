@@ -30,7 +30,7 @@ public class PageElement {
         WebElement element = null;
         logger.info("find element: " + elementIdentifier);
 
-        browserSession.driver.switchTo().window(browserSession.driver.getWindowHandle());
+     browserSession.driver.switchTo().window(browserSession.driver.getWindowHandle());
         if (iFrameIdentifier != -1) {
             browserSession.driver.switchTo().defaultContent();
             browserSession.driver.switchTo().frame(iFrameIdentifier);
