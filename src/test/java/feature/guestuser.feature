@@ -3,7 +3,7 @@ Feature: Add a product in the cart for Guest user
   Scenario: place a order from menu page for guest user
     Given I am store selection page
     When I entered  street details and zip code in delivery section
-    Then I clicked on submit buttom
+    Then I clicked on my submit button
     Then  I go to menu page and check available pizza
     Then select  Pepperoni Pizza
     Then I add to order in my cart page
