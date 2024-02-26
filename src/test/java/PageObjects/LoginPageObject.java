@@ -18,6 +18,8 @@ public class LoginPageObject {
     public static PageElement addtocartbutton_JalapenoPapaBites = new PageElement("//button[@aria-label='Jalapeno Papa Bites']");
     public static PageElement addtoorder_extras = new PageElement("//*[contains(text(),'Add To Order')]");
     public static PageElement checkoout = new PageElement("//*[contains(text(),'Checkout')]");
+    public static PageElement Return_To_Order_Page = new PageElement("//*[@id=\"addToOrder\"]");
+    public static PageElement More_Payment_Option = new PageElement("//*[contains(text(),'More Payment Options')]");
 
 
     public  static TextField Pepperonitext=new TextField("//div[@class='card-header']/h2[@class='title h3']/span[text()='Pepperoni']");

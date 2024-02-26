@@ -16,8 +16,9 @@ Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout order
     And  I choose the Product "Pepperoni" from home Page
     And  I added some extras toppings "Cheesesticks" from given list
     And  I click on Checkout button on home page
-    Then I click on Olo Cart Checkout button on Cart page
-    And  I click on Cash button on Contact and Payment page
+    Then I Handle the Popup if coming on checkout page
+    And  I click on More Payment Option button on Contact and Payment page
+    And  I doing the payment using papa card option on Contact and Payment page
     Then I click on review your order button on  Contact and Payment page
     And  I get the estimated amount from review your order page
     And  I click on Olo Place Your Order button on Cart page
