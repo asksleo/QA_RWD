@@ -12,8 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
+import static PageObjects.StaticTestSession.browserSession;
+
 public class GuestUser {
-    public BrowserSession browserSession = Deliveryorders.browserSession;
+    //public BrowserSession browserSession = Deliveryorders.browserSession;
 
     @Then("I go to menu page and check available pizza")
     public void i_go_to_menu_page_and_check_available_pizza() throws InterruptedException {
