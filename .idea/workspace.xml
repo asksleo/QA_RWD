@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="no change" />
+    <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="no change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/GuestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/GuestUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/Web-carryout-order-using-papacard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/Web-carryout-order-using-papacard.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="emptybranch" />
+        <entry key="$PROJECT_DIR$" value="RWD_Pras" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,19 +38,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2cfTardsJoDs29f9iWoJFv1zlH1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,10 +52,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.TestRunner_Prashant.executor": "Run",
+    "TestNG.TestRunner_Shubham.executor": "Run",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/karan/IdeaProjects/QA_RWD",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,7 +68,7 @@
       <recent name="C:\Users\karan\IdeaProjects\QA_RWD\src\test\java\com\functionaltest\config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner">
+  <component name="RunManager" selected="TestNG.TestRunner_Prashant">
     <configuration name="Feature: 01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" />
@@ -87,14 +88,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Adding a colddrink to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: addcolddrink" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/addcolddrink.feature" />
+      <option name="GLUE" value="cucumber.stepdef hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QA_RWD" />
-      <option name="NAME_FILTER" value="^Adding a colddrink to the cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Adding a colddrink to the cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Adding a colddrink to the cart" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: addcolddrink" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +107,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Log in with valid credentials and placed the order with Cash" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: storeselection" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" />
+      <option name="GLUE" value="cucumber.stepdef hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QA_RWD" />
-      <option name="NAME_FILTER" value="^Log in with valid credentials and placed the order with Cash$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Log in with valid credentials and placed the order with Cash$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Log in with valid credentials and placed the order with Cash" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: storeselection" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,12 +143,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner_Prashant" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_RWD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner_Prashant" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestRunner_Prashant" />
+        <item itemvalue="Cucumber Java.Feature: storeselection" />
+        <item itemvalue="Cucumber Java.Feature: addcolddrink" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: 01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus" />
-        <item itemvalue="Cucumber Java.Scenario: Adding a colddrink to the cart" />
-        <item itemvalue="Cucumber Java.Scenario: Log in with valid credentials and placed the order with Cash" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708502638030</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="no change">
+      <option name="closed" value="true" />
+      <created>1708857126495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708857126495</updated>
+    </task>
+    <task id="LOCAL-00003" summary="no change">
+      <option name="closed" value="true" />
+      <created>1708859217929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708859217929</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +229,27 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Web-carryout-order-using-papacard.feature ---&gt; Added stepdefinitons." />
     <MESSAGE value="no change" />
     <option name="LAST_COMMIT_MESSAGE" value="no change" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdef/SearchStore.java</url>
+          <line>29</line>
+          <properties class="cucumber.stepdef.SearchStore" method="iClickOnWantToCarryItOutButton">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

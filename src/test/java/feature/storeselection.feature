@@ -8,5 +8,4 @@ Feature: select a store on the RWD site.
     Then I click on submit button
     Then select the store in store list
     Then I verify store address as "1925" on home page is displayed or not
-    Then I close the brower after verifed
-
+    Then I close the browser after verified
