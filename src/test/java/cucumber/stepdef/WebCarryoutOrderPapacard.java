@@ -16,6 +16,7 @@ import static PageObjects.StaticTestSession.currentUser;
 
 public class WebCarryoutOrderPapacard {
 
+    PapaCard giftcard;
     PageElement genericPage = new PageElement("");
     private static final Logger logger = LoggerFactory.getLogger(WebCarryoutOrderPapacard.class);
 
@@ -129,8 +130,38 @@ public class WebCarryoutOrderPapacard {
     }
 
 
-    @And("I doing the payment using papa card option on Contact and Payment page")
-    public void iDoingThePaymentUsingPapaCardOptionOnContactAndPaymentPage() {
+    @And("I doing the payment using {string} option on Contact and Payment page")
+    public void iDoingThePaymentUsingOptionOnContactAndPaymentPage(String Payment_method) {
+        genericPage.waitUntilReady();
+        OnlineOrderProductsEnum Paymentenum = OnlineOrderProductsEnum.fromValue(Payment_method.toLowerCase());
+        switch (Paymentenum) {
+            case GIFTCARD:
+                genericPage.waitForDocumentReady();
+                logger.info("Payment Exist -" + Payment_method);
+                GC.isVisibleOnPage();
+                GC.getWebElement().click();
+                genericPage.waitForDocumentReady();
+                new PapaCard("6006490987999901693", "10.00", "1234");
+                gift_card_number.getWebElement().sendKeys(giftcard.getCardNumber());
+                gift_card_pin.getWebElement().sendKeys(giftcard.getPin());
+                break;
+            case CASH:
+                genericPage.waitForDocumentReady();
+                logger.info("Payment Exist -" + Payment_method);
+                Cash.isVisibleOnPage();
+                Cash.getWebElement().click();
+                break;
+            case CREDITCARD:
+                genericPage.waitForDocumentReady();
+                logger.info("Payment Exist -" + Payment_method);
+                addtocartbutton_JalapenoPapaBites.isVisibleOnPage();
+                genericPage.waitForDocumentReady();
+                addtocartbutton_JalapenoPapaBites.getWebElement().click();
+                genericPage.waitForDocumentReady();
+                break;
+            default:
+                logger.error("Not a valid Payment: " + Payment_method);
+        }
     }
 
     @Then("I click on review your order button on  Contact and Payment page")

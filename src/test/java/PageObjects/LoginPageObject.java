@@ -20,6 +20,16 @@ public class LoginPageObject {
     public static PageElement checkoout = new PageElement("//*[contains(text(),'Checkout')]");
     public static PageElement Return_To_Order_Page = new PageElement("//*[@id=\"addToOrder\"]");
     public static PageElement More_Payment_Option = new PageElement("//*[contains(text(),'More Payment Options')]");
+    public static PageElement GC = new PageElement("//*[@id='GIFT_CARD-selectedPaymentCategory']");
+    public static PageElement gift_card_number = new PageElement("//*[@id='gift-card-number']");
+    public static PageElement gift_card_pin = new PageElement("//*[@id='gift-card-pin']");
+    public static PageElement Cash = new PageElement("//*[contains(text(),'Cash')]");
+    public static PageElement C_Firstname = new PageElement("//input[@id='firstName']");
+    public static PageElement C_LastName = new PageElement("//input[@id='lastName']");
+    public static PageElement Email = new PageElement("//input[@id='email']");
+    public static PageElement Phone_no = new PageElement("//input[@id='phone']");
+
+
 
 
     public  static TextField Pepperonitext=new TextField("//div[@class='card-header']/h2[@class='title h3']/span[text()='Pepperoni']");

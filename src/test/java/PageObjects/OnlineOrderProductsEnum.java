@@ -95,10 +95,13 @@ public enum OnlineOrderProductsEnum {
     CREDITCARD("creditcard"),
 
     GIFTCARD("giftcard"),
-
+    CASH("cash"),
     PAYPAL("paypal"),
 
     CHEESESTICKS("cheesesticks"),
+
+
+
     JALAPENOPAPABITES("jalapeno papa bites");
 
     private final String value;
