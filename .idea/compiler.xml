@@ -9,5 +9,8 @@
         <module name="QA_RWD" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="QA_RWD" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
