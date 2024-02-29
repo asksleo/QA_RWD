@@ -3,6 +3,7 @@ package cucumber.stepdef;
 import PageObjects.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import net.bytebuddy.description.type.TypeList;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,8 +16,11 @@ import static PageObjects.LoginPageObject.*;
 import static PageObjects.StaticTestSession.currentUser;
 
 public class WebCarryoutOrderPapacard {
-
-    PapaCard giftcard;
+    String Total_Price_on_Review_order = "$25.49";
+    PapaCard giftcard = new PapaCard("6006490987999947381", "0476");
+    ;
+    CreditCard credit_card = new CreditCard("4715150005146643", "0626", "999",
+            "40223");
     PageElement genericPage = new PageElement("");
     private static final Logger logger = LoggerFactory.getLogger(WebCarryoutOrderPapacard.class);
 
@@ -110,18 +114,15 @@ public class WebCarryoutOrderPapacard {
     @Then("I Handle the Popup if coming on checkout page")
     public void I_Handle_the_Popup_if_coming_on_checkout_page() {
         String Exp_title = BrowserSession.driver.getTitle();
-        try{
-            if(Exp_title.equals(Act_Title.getText()))
-            {
+        try {
+            if (Exp_title.equals(Act_Title.getText())) {
                 BrowserSession.driver.findElement(By.xpath("//*[@id=\"abtt-876-modal\"]/div[2]/div/div[1]/div/div/h2")).isDisplayed();
             }
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Go to the Order Summary Page!!");
             Return_To_Order_Page.click();
         }
     }
-
 
 
     @Then("I click on More Payment Option button on Contact and Payment page")
@@ -138,10 +139,10 @@ public class WebCarryoutOrderPapacard {
             case GIFTCARD:
                 genericPage.waitForDocumentReady();
                 logger.info("Payment Exist -" + Payment_method);
+                jse.executeScript("window.scrollBy(0,500)");
                 GC.isVisibleOnPage();
-                GC.getWebElement().click();
+                GC.click();
                 genericPage.waitForDocumentReady();
-                new PapaCard("6006490987999901693", "10.00", "1234");
                 gift_card_number.getWebElement().sendKeys(giftcard.getCardNumber());
                 gift_card_pin.getWebElement().sendKeys(giftcard.getPin());
                 break;
@@ -154,9 +155,14 @@ public class WebCarryoutOrderPapacard {
             case CREDITCARD:
                 genericPage.waitForDocumentReady();
                 logger.info("Payment Exist -" + Payment_method);
-                addtocartbutton_JalapenoPapaBites.isVisibleOnPage();
-                genericPage.waitForDocumentReady();
-                addtocartbutton_JalapenoPapaBites.getWebElement().click();
+                if (!Credit_Card.isClickableOnPage()) {
+                    Credit_Card.click();
+                }
+                Credit_Card_Number.getWebElement().sendKeys(credit_card.getCardNumber());
+                Credit_Card_Name.getWebElement().sendKeys("Sam Altman");
+                Credit_Card_MMYY.getWebElement().sendKeys(credit_card.getExpiryDate());
+                Credit_Card_CVV.getWebElement().sendKeys(credit_card.getCvvNumber());
+                Credit_Card_Zipcode.getWebElement().sendKeys(credit_card.getZipCode());
                 genericPage.waitForDocumentReady();
                 break;
             default:
@@ -166,28 +172,42 @@ public class WebCarryoutOrderPapacard {
 
     @Then("I click on review your order button on  Contact and Payment page")
     public void i_click_on_review_your_order_button_on_contact_and_payment_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        genericPage.waitUntilReady();
+        Review_Order.click();
     }
 
-    @Then("I get the estimated amount from review your order page")
-    public void i_get_the_estimated_amount_from_review_your_order_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
     @Then("I click on Olo Place Your Order button on Cart page")
     public void i_click_on_olo_place_your_order_button_on_cart_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Place_Order.click();
     }
 
     @Then("I should be on Order Detail Page")
     public void i_should_be_on_order_detail_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        genericPage.waitForDocumentReady();
+        Document_Model_Popup_on_order_confirmation_page.getWebElement().isDisplayed();
+        Close_popup.click();
+        genericPage.waitForDocumentReady();
+        if (BrowserSession.driver.getTitle().equals("checkout-confirmation")) {
+
+            logger.info("Order Placed Successfully !!!");
+            System.out.println("Order Placed Successfully !!!");
+        }
     }
 
+    @Then("I get the estimated amount from review your order page and verified with order confirmation page")
+    public void i_get_the_estimated_amount_from_review_your_order_page_and_verified_with_order_confirmation_page() throws InterruptedException {
+        genericPage.waitForDocumentReady();
+        Order_Details.click();
+        genericPage.wait(3000);
+        String Total_Price_on_Confirmation_Page = BrowserSession.driver.findElement(By.xpath("//*[@id=\"orderContent\"]/div/div[5]/div/div[2]/ul/li/span")).getText();
+        //System.out.println(Total_Price_on_Confirmation_Page.split("\\$",2)[1]);
+        if(Total_Price_on_Confirmation_Page.equals(Total_Price_on_Review_order))
+        {
+            logger.info("Product Price Matched" + Total_Price_on_Confirmation_Page);
+            System.out.println("Product Price Matched as" + Total_Price_on_Confirmation_Page);
+        }
+    }
 
 
 }

@@ -89,4 +89,9 @@ public class PapaCard {
         this.price = price;
         this.pin = pin;
     }
+
+    public PapaCard(String cardNumber, String pin) {
+        this.cardNumber = cardNumber;
+        this.pin = pin;
+    }
 }

@@ -125,4 +125,12 @@ public class CreditCard {
         this.creditCardTip = creditCardTip;
         this.price = price;
     }
+
+    public CreditCard(String cardNumber, String expiryDate, String cvvNumber, String zipCode
+                     ) {
+        this.cardNumber = cardNumber;
+        this.expiryDate = expiryDate;
+        this.cvvNumber = cvvNumber;
+        this.zipCode = zipCode;
+    }
 }

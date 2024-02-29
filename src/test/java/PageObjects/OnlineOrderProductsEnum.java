@@ -92,9 +92,9 @@ public enum OnlineOrderProductsEnum {
 
     TWELVE_INCH_BAC_CSTX("12 inch bac cstx"),
 
-    CREDITCARD("creditcard"),
+    CREDITCARD("credit card"),
 
-    GIFTCARD("giftcard"),
+    GIFTCARD("gift card"),
     CASH("cash"),
     PAYPAL("paypal"),
 
