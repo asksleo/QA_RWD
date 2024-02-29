@@ -18,7 +18,7 @@ Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout order
     And  I click on Checkout button on home page
     Then I Handle the Popup if coming on checkout page
     And  I click on More Payment Option button on Contact and Payment page
-    And  I doing the payment using "cash" option on Contact and Payment page
+    And  I doing the payment using "gift card" option on Contact and Payment page
     Then I click on review your order button on  Contact and Payment page
     And  I click on Olo Place Your Order button on Cart page
     Then I should be on Order Detail Page
