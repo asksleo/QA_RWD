@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="22f70ac5-8ead-4906-a9bf-1d9356a784d0" name="Changes" comment="Completed the Web-carryout-order-using-papacard.feature test case" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +30,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -37,7 +40,10 @@
   <component name="ProjectId" id="2caconRQkYfl1DZnAP0jd2T3nOq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+
   </component>
+  <component name="ProjectId" id="2caconRQkYfl1DZnAP0jd2T3nOq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,9 +53,11 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+
     &quot;TestNG.TestRunner_Prashant.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;RWD__Pras&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+
     &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/jdk-17&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -63,6 +71,7 @@
       <recent name="runner" />
     </key>
   </component>
+
   <component name="RunManager" selected="TestNG.TestRunner_Prashant">
     <configuration name="Scenario: place a order from menu page for guest user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -73,6 +82,7 @@
       <option name="NAME_FILTER" value="^place a order from menu page for guest user$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^place a order from menu page for guest user$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: place a order from menu page for guest user" />
+
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -84,6 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="Scenario: select a store for delivery a order" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" />
@@ -93,6 +104,7 @@
       <option name="NAME_FILTER" value="^select a store for delivery a order$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^select a store for delivery a order$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: select a store for delivery a order" />
+
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,8 +116,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<
     <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_RWD" />
+
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="runner.*" />
@@ -121,7 +135,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="TestRunner_Prashant" type="TestNG" temporary="true" nameIsGenerated="true">
+
       <module name="QA_RWD" />
       <extension name="coverage">
         <pattern>
@@ -157,11 +173,13 @@
     </configuration>
     <recent_temporary>
       <list>
+
         <item itemvalue="TestNG.TestRunner_Prashant" />
         <item itemvalue="TestNG.TestRunner_Shubham" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: select a store for delivery a order" />
         <item itemvalue="Cucumber Java.Scenario: place a order from menu page for guest user" />
+=
       </list>
     </recent_temporary>
   </component>
@@ -201,6 +219,7 @@
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
       <updated>1708967369972</updated>
+<
     </task>
     <task id="LOCAL-00005" summary="Select Delivery order type&#10;and place delivery order in cash payment with Guset users">
       <option name="closed" value="true" />
@@ -243,6 +262,7 @@
       <updated>1709199033473</updated>
     </task>
     <option name="localTasksCounter" value="10" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +290,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Select Delivery order type&#10;and place delivery order in cash payment with Guset users" />
+
     <MESSAGE value="Completed the Web-carryout-order-using-papacard.feature test case" />
     <option name="LAST_COMMIT_MESSAGE" value="Completed the Web-carryout-order-using-papacard.feature test case" />
+
   </component>
 </project>
