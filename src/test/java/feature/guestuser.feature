@@ -12,4 +12,4 @@ Feature: Add a product in the cart for Guest user
     Given I enter (First Name:"Shubham",Last Name:"Singhvi", Email:"test@test.com",Phone Number :"7014552331")
     Then I check Understand and Terms conditions checkbox
     Then I click on Review button and place guest user order
-    Then I close the brower after verifed
+    Then I close the browser after verified
