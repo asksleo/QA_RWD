@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
+import java.io.IOException;
 import java.util.ResourceBundle;
 
 public class Createonlineorderthroughrwdandvalidateit {
@@ -15,7 +16,7 @@ public class Createonlineorderthroughrwdandvalidateit {
 
 
     @Given("I am on the OnlineOrder_Home page on RWD application")
-    public void i_am_on_the_online_order_home_page_on_rwd_application() {
+    public void i_am_on_the_online_order_home_page_on_rwd_application() throws IOException {
         browserSession.open_Browser("chrome");
       String title=browserSession.driver.getTitle();
         RB=ResourceBundle.getBundle("Config");

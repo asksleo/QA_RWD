@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import java.awt.*;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.logging.Logger;
 
@@ -71,7 +72,7 @@ public class SearchStore {
     }
 
     @Given("open {string} browser and load the online website URL")
-    public void openBrowserAndLoadTheOnlineWebsiteURL(String browsername) {
+    public void openBrowserAndLoadTheOnlineWebsiteURL(String browsername) throws IOException {
         browserSession.open_Browser(browsername);
 
     }
