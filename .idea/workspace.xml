@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="new build">
-      <change afterPath="$PROJECT_DIR$/.idea/QA_RWD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DeliveryOrderPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/Web-delivery-order-for-existing-user.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/SearchStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/SearchStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/SearchStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/SearchStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/deliver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/deliver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Prashant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Prashant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/PageElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/Createonlineorderthroughrwdandvalidateit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/Createonlineorderthroughrwdandvalidateit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/01-CreateOnlineOrderThroughRWDApplicationAndValidateInFocus.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +24,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="newbuild" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,22 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: Web-delivery-order-for-existing-user.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.TestRunner_Prashant.executor": "Run",
-    "TestNG.TestRunner_Shubham.executor": "Run",
-    "git-widget-placeholder": "master-create-delivery-order-testcase--prashant",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/karan/IdeaProjects/QA_RWD",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: Web-delivery-order-for-existing-user.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.TestRunner_Prashant.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner_Shubham.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master-create-delivery-order-testcase--prashant&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/karan/IdeaProjects/QA_RWD&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karan\IdeaProjects\QA_RWD\.idea" />
@@ -222,9 +218,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner_Prashant" />
+        <item itemvalue="TestNG.TestRunner (1)" />
         <item itemvalue="Cucumber Java.Feature: Web-delivery-order-for-existing-user" />
         <item itemvalue="TestNG.TestRunner_Shubham" />
-        <item itemvalue="TestNG.TestRunner (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +261,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="01createonlineorderthroughrwdapplication" />
+                        <option value="completeorder" />
                       </list>
                     </value>
                   </entry>
@@ -282,6 +278,27 @@
     <MESSAGE value="Revert &quot;01Createonlineorderthroughrwdapplication&quot;&#10;&#10;This reverts commit 0ee34877" />
     <MESSAGE value="new build" />
     <option name="LAST_COMMIT_MESSAGE" value="new build" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

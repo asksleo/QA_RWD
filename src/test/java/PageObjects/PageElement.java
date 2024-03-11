@@ -23,7 +23,7 @@ public class PageElement {
         this.iFrameIdentifier = iFrameIdentifier;
     }
 
-    // attempt to find the web element via the most commen methods
+    // attempt to find the web element via the most common methods
     public WebElement getWebElement() {
         WebElement element = null;
         logger.info("find element: " + elementIdentifier);
