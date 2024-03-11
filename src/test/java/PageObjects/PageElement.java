@@ -6,9 +6,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.time.Duration;
 
 public class PageElement {
+
+
     protected Logger logger = LoggerFactory.getLogger(getClass().getSimpleName());
     protected String elementIdentifier = null;
     protected int iFrameIdentifier = -1;
@@ -230,6 +234,7 @@ public class PageElement {
             logger.warn("Waiting for document ready failed! Continuing on, and hoping for the best...");
         }
     }
+
 
 }
 

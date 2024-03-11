@@ -16,14 +16,14 @@ import static cucumber.stepdef.WebCarryoutOrderPapacard.genericPage;
 public class deliver {
     public static BrowserSession browserSession = new BrowserSession();
 
-    @Given("I am store selection page")
+/*    @Given("I am store selection page")
     public void i_am_store_selection_page() {
         BrowserSession.driver = new ChromeDriver();
         WebDriverManager.chromedriver().setup();
         BrowserSession.driver.get("https://qa.papajohns.com/order/menu");
         BrowserSession.driver.manage().window().maximize();
         BrowserSession.driver.findElement(By.xpath("//a[text()='Start Your Order']")).click();
-    }
+    }*/
 
 
     @When("I entered  street details and zip code in delivery section")

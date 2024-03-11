@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="new build">
       <change afterPath="$PROJECT_DIR$/.idea/QA_RWD.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DeliveryOrderPageObject.java" afterDir="false" />
@@ -18,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Prashant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Prashant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +29,37 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+
         <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="RWD_Shubh_Updated" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -50,10 +68,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: Web-delivery-order-for-existing-user.executor": "Run",
@@ -68,22 +88,28 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
+
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\karan\IdeaProjects\QA_RWD\.idea" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="PageObjects" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="runner" />
     </key>
   </component>
+
   <component name="RunManager" selected="TestNG.TestRunner_Prashant">
     <configuration name="Feature: 01-Createonlineorderthroughrwdandvalidateit" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-Createonlineorderthroughrwdandvalidateit.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/guestuser.feature" />
       <option name="GLUE" value="cucumber.stepdef hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QA_RWD" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: 01-Createonlineorderthroughrwdandvalidateit" />
+      <option name="SUGGESTED_NAME" value="Feature: guestuser" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,6 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="Feature: Web-delivery-order-for-existing-user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/Web-delivery-order-for-existing-user.feature" />
@@ -115,48 +142,62 @@
       </method>
     </configuration>
     <configuration name="TestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+
       <module name="QA_RWD" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: storeselectiondelivery" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="TestNG" nameIsGenerated="true">
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
+    <configuration name="Scenario: place a order from menu page for guest user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/guestuser.feature" />
+      <option name="GLUE" value="cucumber.stepdef hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_RWD" />
+      <option name="NAME_FILTER" value="^place a order from menu page for guest user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^place a order from menu page for guest user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: place a order from menu page for guest user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: select a store for delivery a order" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" />
+      <option name="GLUE" value="cucumber.stepdef hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_RWD" />
+      <option name="NAME_FILTER" value="^select a store for delivery a order$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^select a store for delivery a order$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: select a store for delivery a order" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+
     <configuration name="TestRunner_Prashant" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_RWD" />
       <extension name="coverage">
@@ -174,6 +215,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="TestRunner_Shubham" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_RWD" />
       <extension name="coverage">
@@ -184,6 +226,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="runner" />
       <option name="MAIN_CLASS_NAME" value="runner.TestRunner_Shubham" />
+
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -197,19 +240,15 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="GROUP_NAME" value="" />
+
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <list>
       <item itemvalue="Cucumber Java.Feature: 01-Createonlineorderthroughrwdandvalidateit" />
       <item itemvalue="Cucumber Java.Feature: Web-delivery-order-for-existing-user" />
@@ -225,6 +264,7 @@
         <item itemvalue="Cucumber Java.Feature: Web-delivery-order-for-existing-user" />
         <item itemvalue="TestNG.TestRunner_Shubham" />
         <item itemvalue="TestNG.TestRunner (1)" />
+
       </list>
     </recent_temporary>
   </component>
@@ -238,20 +278,48 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="01Createonlineorderthroughrwdapplication" />
-      <created>1709444070971</created>
+      <changelist id="22f70ac5-8ead-4906-a9bf-1d9356a784d0" name="Changes" comment="" />
+      <created>1708353307150</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709444070971</updated>
+      <updated>1708353307150</updated>
     </task>
-    <task id="LOCAL-00001" summary="01Createonlineorderthroughrwdapplication">
-      <created>1709444670247</created>
+    <task id="LOCAL-00001" summary="Select Delivery order type&#10;and place delivery order in cash payment with Guset users">
+      <created>1708851690464</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1709444670248</updated>
+      <updated>1708851690464</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Select Delivery order type&#10;and place delivery order in cash payment with Guset users">
+      <created>1708853401777</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708853401777</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Select Delivery order type&#10;and place delivery order in cash payment with Guset users">
+      <created>1708854909088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708854909088</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Select Delivery order type&#10;and place delivery order in cash payment with Guset users">
+      <created>1708967369972</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708967369972</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Select Delivery order type&#10;and place delivery order in cash payment with Guset users">
+      <created>1709658476633</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709658476634</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,12 +328,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="01createonlineorderthroughrwdapplication" />
+                        <option value="RWD_Shubh_Updated" />
                       </list>
                     </value>
                   </entry>
@@ -278,10 +351,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="01Createonlineorderthroughrwdapplication" />
-    <MESSAGE value="Revert &quot;01Createonlineorderthroughrwdapplication&quot;&#10;&#10;This reverts commit 0ee34877" />
-    <MESSAGE value="new build" />
-    <option name="LAST_COMMIT_MESSAGE" value="new build" />
+    <MESSAGE value="Select Delivery order type&#10;and place delivery order in cash payment with Guset users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select Delivery order type&#10;and place delivery order in cash payment with Guset users" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
