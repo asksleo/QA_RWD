@@ -7,5 +7,5 @@ Feature: select a store on the RWD site.
     Then I given the store zip code as "66061" for carryout order
     Then I click on submit button
     Then select the store in store list
-    Then I varify store address as "1925" on home page is displayed or not
-    Then I close the brower after verifed
+    Then I verify store address as "1925" on home page is displayed or not
+    Then I close the browser after verified

@@ -21,12 +21,12 @@ public class WebCarryoutOrderPapacard {
     ;
     CreditCard credit_card = new CreditCard("4715150005146643", "0626", "999",
             "40223");
-    PageElement genericPage = new PageElement("");
+    public static PageElement genericPage = new PageElement("");
     private static final Logger logger = LoggerFactory.getLogger(WebCarryoutOrderPapacard.class);
 
     TextField Act_Title = new TextField("Checkout");
 
-    JavascriptExecutor jse = (JavascriptExecutor) BrowserSession.driver;
+   static JavascriptExecutor jse = (JavascriptExecutor) BrowserSession.driver;
 
     @Then("I click on Login button")
     public void iClickOnLoginButton() {
