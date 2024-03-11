@@ -11,6 +11,7 @@ import java.time.Duration;
 import java.util.logging.Logger;
 
 import static PageObjects.SearchStore.*;
+import static cucumber.stepdef.WebCarryoutOrderPapacard.jse;
 
 public class SearchStore {
     BrowserSession browserSession = StaticTestSession.browserSession;
@@ -28,7 +29,23 @@ public class SearchStore {
 
     @When("I click on Want to carry it out button")
     public void iClickOnWantToCarryItOutButton() {
+//        jse.executeScript("window.scrollBy(0,1200)");
+//        System.out.println(canray_URL_type.getWebElement().getText());
+//        String URL_Parameter = canray_URL_type.getWebElement().getText();
+//        if (URL_Parameter.equals("webnc-q02-24.3.0-rc.3 24.3.0-rc.2"))
+//        {
+//        NewUIforRWD();
+//        }
         Click_on_carry_out_button.getWebElement().click();
+    }
+
+    public void NewUIforRWD(){
+        New_UI_Click_on_carry_out_button.click();
+        New_UI_Store_Zip_Code.getWebElement().sendKeys();
+        BrowserSession.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        New_UI_Submit_button.getWebElement().click();
+        BrowserSession.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        New_UI_Store_selection.getWebElement().click();
     }
 
     @Then("I given the store zip code as {string} for carryout order")

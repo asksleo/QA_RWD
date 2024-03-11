@@ -4,6 +4,6 @@ Feature: select delivery order type
     Given I am store selection page
     When I entered  street details and zip code in delivery section
     Then I clicked on my submit button
-    Then I close the brower after verifed
+    Then I close the browser after verified
 
 

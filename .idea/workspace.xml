@@ -5,19 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d66f12f-ce55-4da6-a6ba-20ac2fabf5c4" name="Changes" comment="new build">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/QA_RWD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DeliveryOrderPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/feature/Web-delivery-order-for-existing-user.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QA_RWD.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/domain/commonTestData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/functionaltest/config/ApplicationSettings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/functionaltest/config/BrowserSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/functionaltest/config/ScreenshotTakingRemoteWebDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/SearchStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/SearchStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/SearchStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/SearchStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/WebCarryoutOrderPapacard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/deliver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdef/deliver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/storeselection.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/storeselectiondelivery.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Prashant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner_Prashant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -30,36 +42,40 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2dAHb8WHppLM55xuqMTTNazzG1z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/karan/IdeaProjects/QA_RWD&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: Web-delivery-order-for-existing-user.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.TestRunner_Prashant.executor": "Run",
+    "TestNG.TestRunner_Shubham.executor": "Run",
+    "git-widget-placeholder": "master-create-delivery-order-testcase--prashant",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/karan/IdeaProjects/QA_RWD",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karan\IdeaProjects\QA_RWD\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner (1)">
+  <component name="RunManager" selected="TestNG.TestRunner_Prashant">
     <configuration name="Feature: 01-Createonlineorderthroughrwdandvalidateit" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/01-Createonlineorderthroughrwdandvalidateit.feature" />
@@ -68,6 +84,25 @@
       <module name="QA_RWD" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: 01-Createonlineorderthroughrwdandvalidateit" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Web-delivery-order-for-existing-user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/Web-delivery-order-for-existing-user.feature" />
+      <option name="GLUE" value="cucumber.stepdef hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QA_RWD" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Web-delivery-order-for-existing-user" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -122,6 +157,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner_Prashant" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_RWD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner_Prashant" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner_Shubham" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_RWD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner_Shubham" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="TestNG" nameIsGenerated="true">
       <shortenClasspath name="NONE" />
       <option name="SUITE_NAME" value="" />
@@ -143,15 +212,28 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Feature: 01-Createonlineorderthroughrwdandvalidateit" />
+      <item itemvalue="Cucumber Java.Feature: Web-delivery-order-for-existing-user" />
       <item itemvalue="TestNG.Unnamed" />
       <item itemvalue="TestNG.TestRunner" />
+      <item itemvalue="TestNG.TestRunner_Prashant" />
+      <item itemvalue="TestNG.TestRunner_Shubham" />
       <item itemvalue="TestNG.TestRunner (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestRunner_Prashant" />
+        <item itemvalue="Cucumber Java.Feature: Web-delivery-order-for-existing-user" />
+        <item itemvalue="TestNG.TestRunner_Shubham" />
         <item itemvalue="TestNG.TestRunner (1)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
