@@ -1,5 +1,5 @@
 @webcarryoutorderpapacard
-
+@smoke
 Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1
   As a user with an existing account
 
