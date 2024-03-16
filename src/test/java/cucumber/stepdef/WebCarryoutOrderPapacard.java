@@ -3,7 +3,7 @@ package cucumber.stepdef;
 import PageObjects.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import net.bytebuddy.description.type.TypeList;
+
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -199,7 +199,7 @@ public class WebCarryoutOrderPapacard {
     public void i_get_the_estimated_amount_from_review_your_order_page_and_verified_with_order_confirmation_page() throws InterruptedException {
         genericPage.waitForDocumentReady();
         Order_Details.click();
-        genericPage.wait(3000);
+        genericPage.waitUntilReady();
         String Total_Price_on_Confirmation_Page = BrowserSession.driver.findElement(By.xpath("//*[@id=\"orderContent\"]/div/div[5]/div/div[2]/ul/li/span")).getText();
         //System.out.println(Total_Price_on_Confirmation_Page.split("\\$",2)[1]);
         if(Total_Price_on_Confirmation_Page.equals(Total_Price_on_Review_order))

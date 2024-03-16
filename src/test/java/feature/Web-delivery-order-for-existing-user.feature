@@ -1,5 +1,5 @@
 @webdeliveryorderforexistinguser
-
+@smoke
 Feature: Order Web-Delivery-order-Complete-for-existing-user - Place Web delivery orders for Day 1
   As a user with an existing account
 
