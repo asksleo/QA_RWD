@@ -22,4 +22,4 @@ Feature: Order 2 Web-Delivery-order-Complete-for-existing-user - Place Web deliv
     And  I click on Olo Place Your Order button on Cart page
     Then I should be on Order Detail Page
     And  I get the estimated amount from review your order page and verified with order confirmation page
-    Then I close the browser after verified
+    #Then I close the browser after verified

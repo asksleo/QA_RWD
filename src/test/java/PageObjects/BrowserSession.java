@@ -37,7 +37,9 @@ public class BrowserSession {
         if (br.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions Options = new ChromeOptions();
+//                    .addArguments("--headless=new"); Using for running test without opening a browser
             Options.addArguments("--remote-allow-origins=*");
+            Options.addArguments("--disable-dev-shm-usage");
             driver = new ChromeDriver(Options);
         } else if (br.equals("edge")) {
             WebDriverManager.edgedriver().setup();

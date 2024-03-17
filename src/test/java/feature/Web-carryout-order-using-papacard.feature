@@ -23,7 +23,7 @@ Feature: Order 1-Web-Carryout-papacard-order-Complete - Place Web carryout order
     And  I click on Olo Place Your Order button on Cart page
     Then I should be on Order Detail Page
     And  I get the estimated amount from review your order page and verified with order confirmation page
-    Then I close the browser after verified
+    #Then I close the browser after verified
 
 
 

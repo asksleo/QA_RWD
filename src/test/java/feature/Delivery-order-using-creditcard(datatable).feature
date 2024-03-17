@@ -5,7 +5,7 @@ Feature: Order 4 Web-Delivery-order-Complete-for-existing-user - Place Web deliv
   As a user with an existing account
 
   Scenario: Order 4 Web-Delivery-order-Complete-for-existing-user - Place Web delivery orders with credit card(using datatable) for Day 1.
-    Given open "edge" browser and load the online website URL
+    Given open "chrome" browser and load the online website URL
     Given I am on store selection page
    # When I entered  street details and zip code in delivery section
     When I entered  street details and zip code in delivery section using datatable
@@ -29,4 +29,5 @@ Feature: Order 4 Web-Delivery-order-Complete-for-existing-user - Place Web deliv
     And  I click on Olo Place Your Order button on Cart page
     Then I should be on Order Detail Page
     And  I get the estimated amount from review your order page and verified with order confirmation page
-    Then I close the browser after verified
+    #Then I close the browser after verified
+     #Removing above step because this is calling browser.close so our session will terminate and effect on tckescreenshot method

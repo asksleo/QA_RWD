@@ -213,6 +213,7 @@ public class WebCarryoutOrderPapacard {
             logger.info("Product Price Matched" + Total_Price_on_Confirmation_Page);
             System.out.println("Product Price Matched as" + Total_Price_on_Confirmation_Page);
         }
+        genericPage.waitForDocumentReady();
     }
 
 
