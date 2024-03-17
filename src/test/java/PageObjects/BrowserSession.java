@@ -61,9 +61,9 @@ public class BrowserSession {
 
     }
     public static Properties getProperies() throws IOException {
-        System.out.println("Started");
+        //System.out.println("Started");
         FileReader File = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\Config.properties");
-        System.out.println(File);
+        //System.out.println(File);
         p = new Properties();
         p.load(File);
         return p;

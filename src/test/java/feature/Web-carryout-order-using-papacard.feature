@@ -1,9 +1,9 @@
 @webcarryoutorderpapacard
 @smoke
-Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1
+Feature: Order 1-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1
   As a user with an existing account
 
-  Scenario: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1.
+  Scenario: Order 1-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1.
     Given open "chrome" browser and load the online website URL
     Given I am on store selection page
     When I click on Want to carry it out button
