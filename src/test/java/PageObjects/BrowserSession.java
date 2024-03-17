@@ -37,7 +37,9 @@ public class BrowserSession {
         if (br.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions Options = new ChromeOptions();
+//                    .addArguments("--headless=new"); Using for running test without opening a browser
             Options.addArguments("--remote-allow-origins=*");
+            Options.addArguments("--disable-dev-shm-usage");
             driver = new ChromeDriver(Options);
         } else if (br.equals("edge")) {
             WebDriverManager.edgedriver().setup();
@@ -61,9 +63,9 @@ public class BrowserSession {
 
     }
     public static Properties getProperies() throws IOException {
-        System.out.println("Started");
+        //System.out.println("Started");
         FileReader File = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\Config.properties");
-        System.out.println(File);
+        //System.out.println(File);
         p = new Properties();
         p.load(File);
         return p;

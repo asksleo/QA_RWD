@@ -25,17 +25,18 @@ public class BeforeandAfter {
 	}
 	@After
 	public void afterMethod(@NotNull Scenario scenario) {
-
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		byte[] src;
+
 		if (scenario.isFailed()) {
 			System.out.println("Test Successfully Completed!!!!");
+			byte[] src;
 			 src = ts.getScreenshotAs(OutputType.BYTES);
 			scenario.attach(src, "image/png", "Failed_screenshot");
 		}else
 		{
-			 src = ts.getScreenshotAs(OutputType.BYTES);
-			scenario.attach(src, "image/png", "Passed_screenshot");
+			byte[] src1;
+			 src1 = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(src1, "image/png", "Passed_screenshot");
 
 		}	}
 

@@ -1,9 +1,10 @@
-@webcarryoutorderpapacard
-@smoke
-Feature: Order 1-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1
+@carryoutorderusingpapacardpaymentdatable
+  @smoke
+
+Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard payment only for Day 1
   As a user with an existing account
 
-  Scenario: Order 1-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard for Day 1.
+  Scenario: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard payment only for Day 1.
     Given open "chrome" browser and load the online website URL
     Given I am on store selection page
     When I click on Want to carry it out button
@@ -18,16 +19,11 @@ Feature: Order 1-Web-Carryout-papacard-order-Complete - Place Web carryout order
     And  I click on Checkout button on home page
     Then I Handle the Popup if coming on checkout page
     And  I click on More Payment Option button on Contact and Payment page
-    And  I doing the payment using "gift card" option on Contact and Payment page
+    And  I doing the payment using gift card only on Contact and Payment page
+      | giftcardNumber          | pin  | price |
+      | 6006490987999947381     | 0476 | 25.71 |
     Then I click on review your order button on  Contact and Payment page
     And  I click on Olo Place Your Order button on Cart page
     Then I should be on Order Detail Page
     And  I get the estimated amount from review your order page and verified with order confirmation page
     #Then I close the browser after verified
-
-
-
-
-
-
-
