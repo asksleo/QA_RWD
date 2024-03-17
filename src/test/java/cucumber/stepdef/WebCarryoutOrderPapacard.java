@@ -1,9 +1,11 @@
 package cucumber.stepdef;
 
 import PageObjects.*;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
+import io.cucumber.java.en.When;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,16 +13,19 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.awt.*;
+import java.lang.reflect.Type;
+import java.util.List;
+import java.util.Map;
 
+import static PageObjects.DeliveryOrderPageObject.*;
 import static PageObjects.LoginPageObject.*;
 import static PageObjects.StaticTestSession.currentUser;
 
 public class WebCarryoutOrderPapacard {
-    String Total_Price_on_Review_order = "$25.49";
-    PapaCard giftcard = new PapaCard("6006490987999947381", "0476");
+
+    PapaCard giftcard = new PapaCard();
     ;
-    CreditCard credit_card = new CreditCard("4715150005146643", "0626", "999",
-            "40223");
+    CreditCard credit_card = new CreditCard();
     public static PageElement genericPage = new PageElement("");
     private static final Logger logger = LoggerFactory.getLogger(WebCarryoutOrderPapacard.class);
 
@@ -200,9 +205,10 @@ public class WebCarryoutOrderPapacard {
         genericPage.waitForDocumentReady();
         Order_Details.click();
         genericPage.waitUntilReady();
+        String Total_Price_Actual = "25.71";
         String Total_Price_on_Confirmation_Page = BrowserSession.driver.findElement(By.xpath("//*[@id=\"orderContent\"]/div/div[5]/div/div[2]/ul/li/span")).getText();
         //System.out.println(Total_Price_on_Confirmation_Page.split("\\$",2)[1]);
-        if(Total_Price_on_Confirmation_Page.equals(Total_Price_on_Review_order))
+        if(Total_Price_on_Confirmation_Page.equals(Total_Price_Actual))
         {
             logger.info("Product Price Matched" + Total_Price_on_Confirmation_Page);
             System.out.println("Product Price Matched as" + Total_Price_on_Confirmation_Page);
@@ -210,4 +216,57 @@ public class WebCarryoutOrderPapacard {
     }
 
 
+    @And("I doing the payment using gift card only on Contact and Payment page")
+    public void iDoingThePaymentUsingGiftCardOnlyOnContactAndPaymentPage(DataTable data) {
+        List<Map<String,String>> rows = data.asMaps(String.class,String.class);
+        genericPage.waitForDocumentReady();
+        jse.executeScript("window.scrollBy(0,500)");
+        GC.isVisibleOnPage();
+        GC.click();
+        for (Map<String,String> columns : rows) {
+            genericPage.waitForDocumentReady();
+            giftcard.setCardNumber(columns.get("giftcardNumber"));
+            giftcard.setPin(columns.get("pin"));
+            giftcard.setPrice(columns.get("price"));
+            gift_card_number.getWebElement().sendKeys(giftcard.getCardNumber());
+            gift_card_pin.getWebElement().sendKeys(giftcard.getPin());
+        }
+
+
+
+    }
+
+    @And("I doing the payment using credit card on Contact and Payment page")
+    public void iDoingThePaymentUsingCreditCardOnContactAndPaymentPage(DataTable data) {
+        genericPage.waitForDocumentReady();
+        List<Map<String, String>> rows = data.asMaps(String.class, String.class);
+        if (!Credit_Card.isClickableOnPage()) {
+            Credit_Card.click();
+        }
+
+        for (Map<String, String> columns : rows) {
+            credit_card.setCardNumber(columns.get("cardnumber"));
+            credit_card.setExpiryDate(columns.get("expirymonth"));
+            credit_card.setCvvNumber(columns.get("securitycode"));
+            credit_card.setZipCode(columns.get("zipcode"));
+
+        }
+        Credit_Card_Number.getWebElement().sendKeys(credit_card.getCardNumber());
+        Credit_Card_Name.getWebElement().sendKeys("Sam Altman");
+        Credit_Card_MMYY.getWebElement().sendKeys(credit_card.getExpiryDate());
+        Credit_Card_CVV.getWebElement().sendKeys(credit_card.getCvvNumber());
+        Credit_Card_Zipcode.getWebElement().sendKeys(credit_card.getZipCode());
+        genericPage.waitForDocumentReady();
+    }
+
+    @When("I entered  street details and zip code in delivery section using datatable")
+    public void iEnteredStreetDetailsAndZipCodeInDeliverySectionUsingDatatable(DataTable data) {
+        List<Map<String, String>> row = data.asMaps(String.class, String.class);
+        for (Map<String, String> col : row) {
+            del_store_address.getWebElement().sendKeys(col.get("Street_Address"));
+            genericPage.waitForDocumentReady();
+            select_store_address_from_list.click();
+            del_store_zipcode.getWebElement().sendKeys(col.get("ZIP_CODE_Delivery"));
+        }
+    }
 }

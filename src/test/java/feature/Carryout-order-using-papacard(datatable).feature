@@ -1,14 +1,16 @@
-@webdeliveryorderforexistinguser
-@smoke
-Feature: Order 2 Web-Delivery-order-Complete-for-existing-user - Place Web delivery orders for Day 1
+@carryoutorderusingpapacardpaymentdatable
+  @smoke
+
+Feature: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard payment only for Day 1
   As a user with an existing account
 
-  Scenario: Order 2 Web-Delivery-order-Complete-for-existing-user - Place Web delivery orders with cash/CC/Papa card for Day 1.
-    Given open "edge" browser and load the online website URL
+  Scenario: Order 3-Web-Carryout-papacard-order-Complete - Place Web carryout orders with papacard payment only for Day 1.
+    Given open "chrome" browser and load the online website URL
     Given I am on store selection page
-    When I entered  street details and zip code in delivery section
-    Then I clicked on my submit button
-   # Then select the store in store list
+    When I click on Want to carry it out button
+    Then I given the store zip code as "66061" for carryout order
+    Then I click on submit button
+    Then select the store in store list
     Then I verify store address as "1925" on home page is displayed or not
     Then I click on Login button
     Then I logged in using "webcarryoute2eee@outlook.com" username and "TestUser!1" password on RWD application
@@ -17,7 +19,9 @@ Feature: Order 2 Web-Delivery-order-Complete-for-existing-user - Place Web deliv
     And  I click on Checkout button on home page
     Then I Handle the Popup if coming on checkout page
     And  I click on More Payment Option button on Contact and Payment page
-    And  I doing the payment using "cash" option on Contact and Payment page
+    And  I doing the payment using gift card only on Contact and Payment page
+      | giftcardNumber          | pin  | price |
+      | 6006490987999947381     | 0476 | 25.71 |
     Then I click on review your order button on  Contact and Payment page
     And  I click on Olo Place Your Order button on Cart page
     Then I should be on Order Detail Page
